@@ -1,0 +1,12 @@
+select {
+    width: 600px;
+    padding:1rem;
+    appearance: none;
+    border: none;
+    text-transform:capitalize;
+}
+@media (max-width: 575.98px) {
+    select {
+        width: 90vw;
+    }
+}

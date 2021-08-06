@@ -1,0 +1,22 @@
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero img {
+    max-width: 100%;
+    position: relative;
+    filter: grayscale(80%);
+}
+.hero h1 {
+    position: absolute;
+    color: white;
+    font-size: 3.5em;
+    letter-spacing: 3px;
+    text-shadow: -1px -1px 0px rgb(20, 20, 20),
+    3px 3px 0px rgb(20, 20, 20),
+    6px 6px 0px rgb(12, 12, 12);
+    z-index: 20;
+    text-align: center;
+    text-transform: uppercase;
+}
