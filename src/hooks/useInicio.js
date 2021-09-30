@@ -6,18 +6,12 @@ const useInicio = () => {
         allStrapiInicio {
             nodes {
               texto
-              imagen{
-                localFile {
-                  publicURL
-                }
-              }
             }
           }
         }
     `)
     return resultado.allStrapiInicio.nodes.map(inicio => ({
         texto:inicio.texto,
-        imagen:inicio.imagen.localFile.publicURL
     }))
 }
 
