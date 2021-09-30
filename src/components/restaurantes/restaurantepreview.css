@@ -56,7 +56,7 @@
 }
 
 .slider img {
-    width: 100%;
+    width: 65%;
     height: 100%;
     object-fit: fill;
     border-radius: .50rem;
@@ -67,12 +67,12 @@
         width: 90vw;
     }
     .slider {
-        margin-top:6vh;
+        margin-top:8vh;
         width: 90vw;
         height: 19rem;
     }
     .slider img {
-        width: 100%;
+        width: 90%;
         height: 100%;
         object-fit:fill;
     }
