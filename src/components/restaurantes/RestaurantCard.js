@@ -4,14 +4,11 @@ import urlSlug from 'url-slug'
 import './restaurantes.css'
 
 
-const RestaurantCard = ({calificacion,imagen,seo,nombre,categoria,ubicaciones}) => {
+const RestaurantCard = ({imagen,seo,nombre,categoria,ubicaciones}) => {
     return (
         <>
         <Link to={urlSlug(nombre)}  className="restaurante">
         <div className="imagen">
-                    <div className="start">
-                        <h3>{calificacion}</h3>
-                    </div>
                     <img src={imagen} alt={seo} />
                 </div>
                 <div className="informacion">

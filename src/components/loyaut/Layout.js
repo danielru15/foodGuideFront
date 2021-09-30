@@ -1,7 +1,10 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
+import { Link } from 'gatsby'
 import Header from '../header/Header'
+
 import './layaout.css'
+
 
 const Layout = ({children}) => {
     return (
@@ -22,25 +25,26 @@ const Layout = ({children}) => {
   	 		<div className="footer-col">
   	 			<h4>company</h4>
   	 			<ul>
-  	 				<li><a href="#">about us</a></li>
+  	 				<li><Link to="/blog">blog</Link></li>
   	 			</ul>
   	 		</div>
   	 		<div className="footer-col">
-  	 			<h4>get help</h4>
+  	 			<h4>Contactanos</h4>
   	 			<ul>
-  	 				<li><a href="#">FAQ</a></li>
-  	 			</ul>
+					   <li>
+					   	<a href='mailto:esqui9710@gmail.com'>Correo: esqui9710@gmail.com</a>
+					   </li>
+				   </ul>
   	 		</div>
+  	 		
   	 		<div className="footer-col">
-  	 			<h4>online shop</h4>
-  	 			<ul>
-  	 				<li><a href="#">watch</a></li>
-  	 			</ul>
-  	 		</div>
-  	 		<div className="footer-col">
-  	 			<h4>follow us</h4>
+  	 			<h4>Siguenos</h4>
   	 			<div className="social-links">
-  	 				
+				   <ul>
+					   <li>
+						   instagram
+					   </li>
+				   </ul>
   	 			</div>
   	 		</div>
   	 	</div>

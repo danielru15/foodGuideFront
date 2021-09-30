@@ -14,7 +14,7 @@
     margin:12px;
     color: black;
     padding: 20px;
-    border-top: 3px solid #386aff;
+    border-top: 3px solid #ff9939;
     text-transform: capitalize;
 }
 .Info ul {
@@ -33,7 +33,11 @@
 }
 .Informacion {
     margin-bottom: 50px;
-    text-transform: capitalize;
+}
+.Informacion p {
+    letter-spacing: .10em;
+    line-height: 1.6;
+    font-size: 1.12em;
 }
 .titulo {
     margin-bottom: 0;
@@ -44,10 +48,9 @@
 }
 .slider {
     white-space:nowrap;
-    width: 893px;
-    height: 450px;
-    margin: 10px auto;
-    margin-top: 30px;
+    width: 55.813rem;
+    height: 29.125rem;
+    margin: 40px auto;
     overflow-y: hidden;
     overflow-x: scroll;
 }
@@ -64,8 +67,9 @@
         width: 90vw;
     }
     .slider {
+        margin-top:6vh;
         width: 90vw;
-        height: 18rem;
+        height: 19rem;
     }
     .slider img {
         width: 100%;

@@ -57,7 +57,7 @@ const RestaurantePreview = ({data:{allStrapiRestaurantes: {nodes}}}) => {
                 <p>cra 53a # 23sur-79</p>
             </div>
             <div className="Info">
-                <h2>-Categoria</h2>
+                <h2>-Categorias</h2>
                 {categorias.map(categoria => (
                     <p>{categoria.nombre}</p>
                 ))}
