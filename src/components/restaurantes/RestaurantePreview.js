@@ -43,6 +43,7 @@ const RestaurantePreview = ({data:{allStrapiRestaurantes: {nodes}}}) => {
                 ))}
             
             </div>
+            
            <div className="contenedor">
             <div className="Info">
                 <h2>-Ubicaciones</h2>
