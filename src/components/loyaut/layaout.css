@@ -27,9 +27,9 @@ ul{
 .footer{
 	width: 100%;
 	margin-top: 50px;
-	background-color: #ff9939;
+	background-color: #ff9551;
     padding: 60px 0;
-    border-top: 4px solid rgb(0, 0, 0);
+    border-top: 3px solid rgb(0, 0, 0);
 }
 .footer-col{
    width: 33%;
@@ -89,6 +89,9 @@ ul{
 
 /*responsive*/
 @media(max-width: 767px){
+	.footer {
+		border-top: 4px solid rgb(0, 0, 0);
+	}
   .footer-col{
     width: 50%;
     margin-bottom: 30px;

@@ -2,6 +2,7 @@ import { graphql } from 'gatsby'
 import React from 'react'
 import Layout from '../loyaut/Layout'
 import './restaurantepreview.css'
+import { Helmet } from 'react-helmet'
 import ReactStars from "react-rating-stars-component";
 
 export const query = graphql`
@@ -12,6 +13,7 @@ query($id:String!) {
             calificacion
             descripcion
             precio
+            sedeVisitada
             categorias {
               nombre
             }
@@ -29,9 +31,13 @@ query($id:String!) {
 const RestaurantePreview = ({data:{allStrapiRestaurantes: {nodes}}}) => {
     
     const {nombre, calificacion, descripcion , precio,
-          categorias,ubicaciones,imagen  } = nodes[0]
+          ubicaciones,imagen,sedeVisitada  } = nodes[0]
          
-       
+          const formatodivisa = new Intl.NumberFormat('es-CO',{
+            style:'currency',
+            currency:'COP',
+            minimumFractionDigits: 0
+        })
     return (
             <Layout>
             <div className="titulo">
@@ -54,17 +60,13 @@ const RestaurantePreview = ({data:{allStrapiRestaurantes: {nodes}}}) => {
                 }
                 </ul>
                 <h2>-Sede visitada</h2>
-                <p>cra 53a # 23sur-79</p>
-            </div>
-            <div className="Info">
-                <h2>-Categorias</h2>
-                {categorias.map(categoria => (
-                    <p>{categoria.nombre}</p>
-                ))}
+                <p>{sedeVisitada}</p>
             </div>
             <div className="Info">
                 <h2>-Precio</h2>
-                <p>$ {precio} COP</p>
+                <p>{formatodivisa.format(precio)} COP </p>
+            </div>
+            <div className="Info">
                 <h2>-Calificacion</h2>
                 <ReactStars
                 count={5}
