@@ -17,7 +17,7 @@ const RestaurantCard = ({imagen,seo,nombre,calificacion,ubicaciones}) => {
                 <ReactStars
                     count={5}
                     value={calificacion}
-                    size={20}
+                    size={15}
                     edit={false}
                     activeColor="#ffd700"
                     isHalf={true}
