@@ -1,5 +1,12 @@
 .notfound {
     font-weight: normal;
     text-align: center;
-    margin:115px auto
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.notfound img {
+    width: 200px;
+    height: 200px;
 }

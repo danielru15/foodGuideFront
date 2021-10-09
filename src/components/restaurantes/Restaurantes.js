@@ -23,7 +23,7 @@ const Restaurantes = () => {
            setfiltradas(restaurante)
        }
    }, [categoria , restaurante])
-   
+
     return (
         <>
         <div className="filtro">
@@ -45,7 +45,10 @@ const Restaurantes = () => {
                     />
             ))
             : <>
-                <NotFound/>
+                <NotFound
+                 categoria={categoria}
+                
+                />
             </>
             } 
             

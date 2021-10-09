@@ -1,11 +1,12 @@
 import React from 'react'
 import './notfound.css'
 import RestaurantCard from '../restaurantes/RestaurantCard'
-const NotFound = () => {
+const NotFound = ({categoria}) => {
     return (
         <>
             <h2 className="notfound">
-            NO se encontraron resultados para o los filtros seleccionados, prueba con u otros filtros.
+                <img src="https://res.cloudinary.com/danielru997/image/upload/v1633761431/happyfoodie_copia_cpry5f.png" alt="logo" />
+            NO se encontraron resultados para {categoria} prueba con otra categoria.
             </h2>
         </>
     )

@@ -10,7 +10,7 @@ const Layout = ({children}) => {
         <>
         <Helmet>
 			<title> Happyfoodie.co</title>
-            <link rel="shortcut icon" href="https://sevilla.abc.es/gurme/wp-content/uploads/sites/24/2012/01/comida-rapida-casera.jpg" type="image/x-icon" />
+            <link rel="shortcut icon" href="https://res.cloudinary.com/danielru997/image/upload/v1633760446/happyfoodie_copia_1_nrtri5.ico" type="image/x-icon" />
             <link rel="preconnect" href="https://fonts.googleapis.com" />
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
             <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet"/>
