@@ -11,6 +11,7 @@ const Layout = ({children}) => {
         <Helmet>
 			<title> Happyfoodie.co</title>
             <link rel="shortcut icon" href="https://res.cloudinary.com/danielru997/image/upload/v1633760446/happyfoodie_copia_1_nrtri5.ico" type="image/x-icon" />
+			<meta name="theme-color" content="#ff9551" />
             <link rel="preconnect" href="https://fonts.googleapis.com" />
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
             <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet"/>
@@ -22,7 +23,7 @@ const Layout = ({children}) => {
   	 <div className="container">
   	 	<div className="row">
   	 		<div className="footer-col">
-  	 			<h4>Happyfoodies.co</h4>
+  	 			<h4>Happyfoodie.co</h4>
   	 			
   	 		</div>
   	 		<div className="footer-col">

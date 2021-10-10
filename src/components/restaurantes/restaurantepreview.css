@@ -14,11 +14,10 @@
     margin:12px;
     color: black;
     padding: 20px;
-    border-top: 3px solid #ff9939;
-    text-transform: capitalize;
+    border-top: 3px solid #ff9551;
 }
-.Info ul {
-    display: flex;
+.Info h2 {
+    color: #ff8716;
 }
 .Informacion, .titulo {
     width:893px;
@@ -46,6 +45,10 @@
     letter-spacing: 1em;
     text-transform: uppercase;
 }
+.titulo h1 {
+    color: #ff8716;
+    font-weight: bolder;
+}
 .slider {
     white-space:nowrap;
     width: 55.813rem;
@@ -67,7 +70,7 @@
         width: 90vw;
     }
     .slider {
-        margin-top: 6vh;
+        margin-top: 8vh;
         margin:4vh auto;
         width: 93vw;
         height:20rem;

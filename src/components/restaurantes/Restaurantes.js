@@ -41,7 +41,6 @@ const Restaurantes = () => {
                         seo={restaurant.imagen[0].nombre}
                         categoria={restaurant.categorias[0].nombre}
                         nombre={restaurant.nombre}
-                        ubicaciones={restaurant.ubicaciones}
                     />
             ))
             : <>

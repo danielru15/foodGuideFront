@@ -5,11 +5,11 @@ import './restaurantes.css'
 import ReactStars from "react-rating-stars-component";
 
 
-const RestaurantCard = ({imagen,seo,nombre,calificacion,ubicaciones}) => {
+const RestaurantCard = ({key,imagen,seo,nombre,calificacion,categoria}) => {
     return (
         <>
-        <Link to={urlSlug(nombre)}  className="restaurante" >
-        <div className="imagen" >
+        <Link to={urlSlug(nombre)}  className="restaurante" key={key}>
+        <div className="imagen">
                     <img src={imagen} alt={seo} />
                 </div>
                 <div className="informacion">
@@ -17,15 +17,12 @@ const RestaurantCard = ({imagen,seo,nombre,calificacion,ubicaciones}) => {
                 <ReactStars
                     count={5}
                     value={calificacion}
-                    size={15}
+                    size={18}
                     edit={false}
                     activeColor="#ffd700"
                     isHalf={true}
                 />
-                    <div className="flex">Ubicaciones: {ubicaciones.map(restaurante=> (
-                            <p> -{restaurante.nombre}</p>
-                        ))}
-                    </div>
+                    <p>{categoria}</p>
                 </div>
         </Link>
                 

@@ -58,6 +58,9 @@
     padding:5px 15px;
     text-transform: capitalize;
 }
+.informacion h2 {
+    color: #ff8716;
+}
 .flex {
     display: flex;
 }

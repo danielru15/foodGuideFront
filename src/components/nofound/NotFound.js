@@ -1,6 +1,5 @@
 import React from 'react'
 import './notfound.css'
-import RestaurantCard from '../restaurantes/RestaurantCard'
 const NotFound = ({categoria}) => {
     return (
         <>
